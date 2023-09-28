@@ -25,7 +25,7 @@ a.headline {
     color: white;
     padding: 10px;
     float: right;
-    vertical-align: middle; // czemu nie działa??
+    vertical-align: middle;
 }
 
 a.headline:hover {
@@ -33,7 +33,7 @@ a.headline:hover {
 }
 
 button.add {
-    float: right;  // czemu button robi się przed a??
+    float: right;
     vertical-align: middle;
     margin: 20px;
     margin-right: 30px;
