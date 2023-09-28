@@ -65,8 +65,57 @@ button.search {
     float: none;
 }
 
+h2 {
+    text-decoration: none;
+}
+
 h3 {
     background-color: whitesmoke;
+    display: flexbox;
+}
+
+h3 img {
+    border-radius: 40px;
+}
+img.antiqe {
+    background-color: blueviolet;
+}
+
+img.car{
+    background-color: yellow;
+}
+
+img.house{
+    background-color: purple;
+}
+
+img.case{
+    background-color: orangered;
+}
+
+img.sofa{
+    background-color: green;
+}
+
+img.phone{
+    background-color: blue;
+}
+
+img.moda{
+    background-color: red;
+}
+
+img.tractor{
+    background-color: cornflowerblue;
+}
+
+img.animal{
+    background-color: pink;
+}
+
+h3 p {
+    text-align: center;
+    font-size: 30px;
 }
 
 h4 {
