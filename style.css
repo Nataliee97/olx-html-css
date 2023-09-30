@@ -39,13 +39,15 @@ button.add {
 } 
 
 h1, h2, h3, footer {
-
+    display: inline-flexbox;
+    justify-content: center;
     text-align: center;
     background-color: rgb(183, 198, 212);
     padding: 30px;
     margin-left: 50px;
     margin-right: 50px;
     margin: 0;
+    text-decoration: none;
 }
 
 input {
@@ -61,27 +63,29 @@ input {
 
 select {
     padding: 18px;
+    padding-left: 50px;
+    background-image: url(ikony/place.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 35px;
 }
 
 button.search {
-    padding: 18px;
+    padding: 16px;
     margin: 0;
     text-align: center;
     float: none;
 }
 
-h1 {
-    text-decoration: none;
-}
-
 h2 {
     background-color: whitesmoke;
-    display: flexbox;
+    justify-content: space-evenly;
 }
 
 h2 img {
     border-radius: 40px;
 }
+
 img.antiqe {
     background-color: blueviolet;
 }
