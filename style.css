@@ -47,6 +47,12 @@ h1, h2, h3, footer {
 input {
     padding: 18px;
     padding-right: 200px;
+    padding-left: 50px;
+    background-image: url(ikony/lupa.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+
 }
 
 select {
@@ -185,6 +191,14 @@ p.an, p.category {
     font-size: 40px;
 }
 
+div.an {
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
 div.business {
     background-color: #123418;
     margin: -30px;
@@ -195,7 +209,7 @@ div.business {
 div.adv {
     background-color: aqua;
     margin: -30px;
-    padding: 20px;
+    padding: 40px;
 }
 
 div.category, div.end {
