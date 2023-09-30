@@ -4,26 +4,21 @@ body {
 
 nav {
     display: inline block;
-    margin: -30px;
+    margin: -10px;
     margin-bottom: 10px;
     padding: 0;
     background-color: #123418;
     color: white;
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
-
-}
-
-a.olx {
-    padding: 0;
-    margin: 20px;
+    vertical-align: middle;
 }
 
 a.headline {
     text-align: right;
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 20px;
     float: right;
     vertical-align: middle;
 }
@@ -40,7 +35,7 @@ button.add {
     padding: 5px;
 } 
 
-h2, h3, h4, footer {
+h1, h2, h3, footer {
     text-align: center;
     background-color: rgb(183, 198, 212);
     padding: 30px;
@@ -65,16 +60,16 @@ button.search {
     float: none;
 }
 
-h2 {
+h1 {
     text-decoration: none;
 }
 
-h3 {
+h2 {
     background-color: whitesmoke;
     display: flexbox;
 }
 
-h3 img {
+h2 img {
     border-radius: 40px;
 }
 img.antiqe {
@@ -113,12 +108,76 @@ img.animal{
     background-color: pink;
 }
 
-h3 p {
+img.child{
+    background-color: brown;
+}
+
+img.sport{
+    background-color: powderblue;
+}
+
+img.music{
+    background-color: orchid;
+}
+
+img.beauty{
+    background-color: indigo;
+}
+
+img.services{
+    background-color: yellowgreen;
+}
+
+img.bed{
+    background-color: teal;
+}
+
+img.rent{
+    background-color: rosybrown;
+}
+
+img.firm{
+    background-color: wheat;
+}
+
+img.outlet{
+    background-color: aquamarine;
+}
+
+img.free{
+    background-color: salmon;
+}
+
+img.prl{
+    background-color: darkmagenta;
+}
+
+img.iphone{
+    background-color: forestgreen;
+}
+
+img.dices{
+    background-color: gold;
+}
+
+img.honey{
+    background-color: hotpink;
+}
+
+img.delivery{
+    background-color: khaki;
+}
+
+img.shipping{
+    background-color: cornflowerblue;
+}
+
+h2 p {
     text-align: center;
     font-size: 30px;
 }
 
-h4 {
+h3 {
     background-color: rgb(183, 198, 212);
 }
 
