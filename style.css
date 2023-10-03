@@ -2,6 +2,10 @@ body {
     background-color: beige;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: inline-flexbox;
     justify-content: flex-end;
@@ -22,7 +26,6 @@ a.olx {
 }
 
 a.headline {
-    text-decoration: none;
     color: white;
     padding: 20px;
 }
@@ -47,7 +50,6 @@ h1, h2, h3, footer {
     margin-left: 50px;
     margin-right: 50px;
     margin: 0;
-    text-decoration: none;
 }
 
 input {
@@ -90,7 +92,6 @@ div.category {
     text-align: left;
     padding: auto;
     font-size: 20px;
-    text-decoration: none;
 }
 
 div.category a {
