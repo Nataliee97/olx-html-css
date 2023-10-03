@@ -85,6 +85,20 @@ h2 img {
     border-radius: 40px;
 }
 
+div.category {
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    font-size: 20px;
+    
+}
+
+div.category a {
+    width: 130px;
+    display: inline-table;
+    text-align: center;
+}
+
 img.antiqe {
     background-color: blueviolet;
 }
@@ -252,13 +266,13 @@ div.adv img {
     height: 50px;
 }
 
-div.category, div.end {
+div.maincategory, div.end {
     margin: 5px;
     padding: 20px;
     text-align: left;
 }
 
-div.category img {
+div.maincategory img {
     margin-top: 20px;
 }
 
