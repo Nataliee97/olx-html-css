@@ -313,9 +313,25 @@ div.mainCategory img {
 
 div.end {
     column-count: 3;
+    align-self: flex-start;
     text-align: left;
 }
 
 div.end a {
     font-weight: bold;
+}
+
+div.column1, div.column2 {
+    break-after: column;
+    white-space: pre;
+}
+
+div.column3 a {
+    padding: 1.5rem;
+}
+
+div.column3 p {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
 }
