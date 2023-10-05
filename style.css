@@ -7,7 +7,8 @@ a {
 }
 
 nav {
-    display: inline-flexbox;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     text-align: right;
     margin: -10px;
@@ -22,7 +23,6 @@ nav {
 a.olx {
     position: absolute;
     left: 0px;
-    
 }
 
 a.headline {
@@ -32,6 +32,10 @@ a.headline {
 
 a.headline:hover {
     color: aqua;
+}
+
+p.headline {
+    
 }
 
 button.add {
@@ -53,6 +57,7 @@ h1, h2, h3, footer {
 }
 
 input {
+    margin: 10px;
     padding: 18px;
     padding-right: 200px;
     padding-left: 50px;
@@ -60,23 +65,34 @@ input {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 35px;
-
+    flex-grow: 2;
+    border: 1px solid black;
+    font-size: 20px;
 }
 
 select {
     padding: 18px;
+    margin: 10px;
     padding-left: 50px;
     background-image: url(ikony/place.png);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 35px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid black;
+    font-size: 20px;
 }
 
 button.search {
-    padding: 16px;
+    margin: 10px;
+    padding: 18px;
     margin: 0;
     text-align: center;
     float: none;
+    flex-shrink: 2;
+    border: 1px solid black;
+    font-size: 20px;
 }
 
 h2 {
@@ -209,7 +225,7 @@ h3 {
     background-color: rgb(183, 198, 212);
 }
 
-p.an, p.category {
+p.an {
     font-size: 40px;
 }
 
@@ -267,13 +283,13 @@ div.adv img {
     height: 50px;
 }
 
-div.maincategory, div.end {
+div.mainCategory, div.end {
     margin: 5px;
     padding: 20px;
     text-align: left;
 }
 
-div.maincategory img {
+div.mainCategory img {
     margin-top: 20px;
 }
 
@@ -281,4 +297,8 @@ div.end {
     column-count: 3;
     height: 200px;
     text-align: left;
+}
+
+div.end a {
+    font-weight: bold;
 }
