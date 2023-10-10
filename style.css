@@ -348,3 +348,30 @@ div.column3 p {
   padding: 1.5rem;
   padding-top: 0.5rem;
 }
+
+@media all and (max-width: 660px) {
+  nav b {
+    display: none;
+    padding: 1rem;
+  }
+
+  button.add {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  h1,
+  h2,
+  h3,
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  div.end {
+    display: inline;
+    column-count: none;
+    text-align: left;
+  }
+}
