@@ -1,7 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  background-color: #f2f4f5;
+  background-color: #f8400d;
+  color: #002f34;
   margin: 0;
 }
 
@@ -42,7 +43,7 @@ a.headline {
 }
 
 a.headline:hover {
-  color: #7f9799;
+  color: #f2f4f5;
 }
 
 a.headline img {
@@ -65,11 +66,13 @@ footer {
   display: inline-flexbox;
   justify-content: row;
   text-align: center;
-  background-color: rgb(225, 232, 239);
-  padding: 2.5rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  background-color: rgb(228, 231, 232);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 8.4rem;
+  margin-right: 8.4rem;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 h1 {
@@ -79,25 +82,24 @@ h1 {
 input {
   margin: 0.5rem;
   padding: 1rem;
-  padding-right: 10rem;
-  padding-left: 5rem;
   background-image: url(ikony/lupa.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 2rem;
   border: 1px solid black;
   font-weight: 400;
+  height: 4.5rem;
 }
 
 select {
   margin: 0.5rem;
   padding: 1rem;
-  padding-left: 5rem;
   background-image: url(ikony/place.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 2rem;
   border: 1px solid black;
+  height: 4.5rem;
 }
 
 button.search {
@@ -107,6 +109,7 @@ button.search {
   text-align: center;
   float: none;
   border: 1px solid black;
+  height: 4.5rem;
 }
 
 h2 {
@@ -118,19 +121,20 @@ h2 img {
 }
 
 div.category {
-  width: 100%;
-  text-align: left;
-  padding: auto;
+  text-align: center;
+  padding: 0;
+  line-height: 1.25;
 }
 
 div.category a {
-  width: 8rem;
+  width: 7.5rem;
   display: inline-table;
   text-align: center;
 }
 
 div.category p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #002f34;
 }
 
 div.category p:hover {
@@ -139,109 +143,111 @@ div.category p:hover {
 }
 
 img.antiqe {
-  background-color: blueviolet;
+  background-color: rgb(255, 206, 50);
 }
 
 img.car {
-  background-color: yellow;
+  background-color: rgb(58, 119, 255);
 }
 
 img.house {
-  background-color: purple;
+  background-color: rgb(35, 229, 219);
 }
 
 img.case {
-  background-color: orangered;
+  background-color: rgb(255, 86, 54);
 }
 
 img.sofa {
-  background-color: green;
+  background-color: rgb(255, 246, 217);
 }
 
 img.phone {
-  background-color: blue;
+  background-color: rgb(206, 221, 255);
 }
 
 img.moda {
-  background-color: red;
+  background-color: rgb(200, 248, 246);
 }
 
 img.tractor {
-  background-color: cornflowerblue;
+  background-color: rgb(255, 214, 201);
 }
 
 img.animal {
-  background-color: pink;
+  background-color: rgb(255, 206, 50);
 }
 
 img.child {
-  background-color: brown;
+  background-color: rgb(206, 221, 255);
 }
 
 img.sport {
-  background-color: powderblue;
+  background-color: rgb(200, 248, 246);
 }
 
 img.music {
-  background-color: orchid;
+  background-color: rgb(255, 214, 201);
 }
 
 img.beauty {
-  background-color: indigo;
+  background-color: rgb(255, 246, 217);
 }
 
 img.services {
-  background-color: yellowgreen;
+  background-color: rgb(58, 119, 255);
 }
 
 img.bed {
-  background-color: teal;
+  background-color: rgb(35, 229, 219);
 }
 
 img.rent {
-  background-color: rosybrown;
+  background-color: rgb(255, 86, 54);
 }
 
 img.firm {
-  background-color: wheat;
+  background-color: rgb(255, 246, 217);
 }
 
 img.outlet {
-  background-color: aquamarine;
+  background-color: rgb(206, 221, 255);
 }
 
 img.free {
-  background-color: salmon;
+  background-color: rgb(35, 229, 219);
+}
+
+img.fire {
+  background-color: rgb(255, 214, 201);
 }
 
 img.prl {
-  background-color: darkmagenta;
+  background-color: rgb(255, 206, 50);
 }
 
-img.iphone {
-  background-color: forestgreen;
+img.audio {
+  background-color: rgb(58, 119, 255);
 }
 
-img.dices {
-  background-color: gold;
+img.perfum {
+  background-color: rgb(200, 248, 246);
 }
 
-img.honey {
-  background-color: hotpink;
+img.work {
+  background-color: rgb(255, 214, 201);
 }
 
-img.delivery {
-  background-color: khaki;
-}
-
-img.shipping {
-  background-color: cornflowerblue;
+img.moto {
+  background-color: rgb(255, 206, 50);
 }
 
 h2 p,
 p.an {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
 }
 
 h3 {
@@ -262,8 +268,8 @@ div.business {
   flex-direction: row;
   justify-content: space-around;
   background-color: #002f34;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 div.check {
@@ -272,15 +278,18 @@ div.check {
 }
 
 p.mark {
-  color: rgb(225, 232, 239);
+  color: #7f9799;
   margin-left: 0.5rem;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 p.know {
-  color: white;
-  font-size: 2rem;
+  color: #f2f4f5;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 img.chart {
