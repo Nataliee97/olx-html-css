@@ -29,10 +29,11 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 10%;
 }
 
 a.olx {
-  margin-left: 10rem;
+  margin-left: 8rem;
   position: absolute;
   left: 0;
 }
@@ -46,13 +47,13 @@ a.headline:hover {
   color: #f2f4f5;
 }
 
-a.headline img {
+a.headline i {
   padding-right: 1rem;
 }
 
 button.add {
   margin: 1rem;
-  margin-right: 10rem;
+  margin-right: 8.5rem;
   font-size: 1rem;
   font-weight: bold;
   box-sizing: border-box;
@@ -60,8 +61,8 @@ button.add {
   align-self: center;
   background-color: #f2f4f5;
   color: #002f34;
-  width: 12rem;
-  height: 3.5rem;
+  width: 11.5rem;
+  height: 3rem;
 }
 
 h1,
@@ -74,47 +75,52 @@ footer {
   background-color: rgb(228, 231, 232);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  margin-left: 8.4rem;
-  margin-right: 8.4rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 h1 {
+  display: inline-flex;
   margin-top: 12rem;
+  padding: 2.7rem 0.92rem;
 }
 
 input {
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 0.1rem;
   background-image: url(ikony/lupa.png);
-  background-position: left center;
+  background-position: 1rem;
   background-repeat: no-repeat;
-  background-size: 2rem;
-  border: 1px solid black;
+  background-size: 1.5rem;
   font-weight: 400;
   height: 4.5rem;
+  width: 750px;
+  border: 0;
 }
 
 select {
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 0.1rem;
+  padding: 1rem 3rem;
   background-image: url(ikony/place.png);
-  background-position: left center;
+  background-position: 1rem;
   background-repeat: no-repeat;
-  background-size: 2rem;
-  border: 1px solid black;
+  background-size: 1.5rem;
   height: 4.5rem;
+  width: 340px;
+  border: 0;
 }
 
 button.search {
-  margin: 0.5rem;
   padding: 1rem;
-  margin: 0;
+  margin: 0.1rem;
   text-align: center;
   float: none;
-  border: 1px solid black;
   height: 4.5rem;
+  width: 150px;
+  border: 0;
+  background-color: #fff;
+  font-size: 1rem;
 }
 
 h2 {
@@ -126,8 +132,8 @@ h2 img {
 }
 
 div.category {
-  text-align: center;
-  padding: 0;
+  text-align: left;
+  padding: 4rem;
   line-height: 1.25;
 }
 
@@ -256,54 +262,77 @@ p.an {
 }
 
 h3 {
-  background-color: rgb(225, 232, 239);
   align-items: left;
 }
 
+h3 p {
+  font-size: 1rem;
+  font-style: normal;
+}
 div.an {
   display: inline-block;
-  height: 12rem;
-  width: 9rem;
-  border: 1px solid black;
-  margin: 0.5rem;
+  border: 0;
+  margin: 0.3rem;
+  background-color: #fff;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 400;
+  width: 16.6rem;
+  border-radius: 0.5rem;
+}
+
+div.an img {
+  height: 268px;
+  width: 265px;
+}
+
+div.an i {
+  float: right;
+}
+
+p.date {
+  font-size: 0.7rem;
+  color: #7f9799;
 }
 
 div.business {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background-color: #002f34;
   padding: 0;
   margin: 0;
+  height: 8.3rem;
 }
 
 div.check {
   text-align: left;
-  line-height: 1.8rem;
+  margin-left: 6rem;
 }
 
 p.mark {
   color: #7f9799;
   margin-left: 0.5rem;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: bold;
+  padding-top: 1rem;
 }
 
 p.know {
   color: #f2f4f5;
-  margin-top: 0.5rem;
+  padding-top: 0;
+  margin-top: 0;
   margin-left: 0.5rem;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 img.chart {
   align-self: center;
+  margin-left: 15rem;
 }
 
 button.more {
   padding: 0.6rem 1.3rem;
   margin: 1rem;
+  margin-left: 5rem;
   font-size: 0.9rem;
   font-weight: bold;
   box-sizing: border-box;
@@ -326,11 +355,13 @@ div.adv {
 div.adv img.iconolx {
   height: 3.5rem;
   width: 6rem;
+  padding: 2rem;
 }
 
-div.adv img {
+div.adv i {
   padding: 0.5rem;
   height: 3rem;
+  margin-top: 1rem;
 }
 
 div.mainCategory,
@@ -386,9 +417,22 @@ div.column3 p {
     margin-right: 0;
   }
 
+  a.olx {
+    margin-left: 1rem;
+  }
+
+  button.add {
+    margin-right: 1rem;
+  }
+
   div.end {
     display: inline;
     column-count: none;
     text-align: left;
+  }
+
+  nav b {
+    display: none;
+    padding: 1rem;
   }
 }
