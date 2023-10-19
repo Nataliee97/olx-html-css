@@ -305,6 +305,7 @@ div.business {
 
 div.check {
   text-align: left;
+  margin-top: 1rem;
   margin-left: 6rem;
 }
 
@@ -313,6 +314,7 @@ p.mark {
   margin-left: 0.5rem;
   font-weight: bold;
   padding-top: 1rem;
+  line-height: 0.25;
 }
 
 p.know {
@@ -346,10 +348,13 @@ button.more {
 
 div.adv {
   background-color: #cbf7ee;
-  padding: 3rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  color: #002f34;
+  font-size: 0.8rem;
+  padding: 1rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
   font-weight: lighter;
+  line-height: 1.5rem;
 }
 
 div.adv img.iconolx {
@@ -362,12 +367,14 @@ div.adv i {
   padding: 0.5rem;
   height: 3rem;
   margin-top: 1rem;
+  font-size: 2.5rem;
 }
 
 div.mainCategory,
 div.end {
   margin: 1rem;
-  padding: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -375,19 +382,33 @@ div.mainCategory img {
   margin-top: 2rem;
 }
 
+div.mainCategory a,
+div.mainCategory p {
+  color: #002f34;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
 div.end {
   column-count: 3;
   align-self: flex-start;
   text-align: left;
+  flex-wrap: wrap;
+  line-height: 2rem;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 div.end a {
   font-weight: bold;
+  color: #002f34;
 }
 
 div.column1,
 div.column2 {
   break-after: column;
+  column-width: 200px;
   white-space: pre;
 }
 
