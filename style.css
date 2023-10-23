@@ -66,8 +66,17 @@ button.add {
 }
 
 h1,
-h2,
-h3,
+h2 {
+  margin-bottom: 5rem;
+  display: flexbox;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.search,
+div.category,
+div.announcements,
 footer {
   display: inline-flexbox;
   justify-content: row;
@@ -81,10 +90,10 @@ footer {
   margin-top: 0;
 }
 
-h1 {
-  display: inline-flex;
+div.search {
+  display: flex;
   margin-top: 12rem;
-  padding: 2.7rem 0.92rem;
+  padding: 2rem 1rem;
 }
 
 input {
@@ -123,15 +132,12 @@ button.search {
   font-size: 1rem;
 }
 
-h2 {
-  background-color: whitesmoke;
-}
-
-h2 img {
+div.category img {
   border-radius: 3rem;
 }
 
 div.category {
+  background-color: #fff;
   text-align: left;
   padding: 4rem;
   line-height: 1.25;
@@ -146,6 +152,7 @@ div.category a {
 div.category p {
   font-size: 0.9rem;
   color: #002f34;
+  font-weight: bold;
 }
 
 div.category p:hover {
@@ -253,7 +260,6 @@ img.moto {
   background-color: rgb(255, 206, 50);
 }
 
-h2 p,
 p.an {
   text-align: center;
   font-size: 2rem;
@@ -261,11 +267,11 @@ p.an {
   margin-bottom: 3.5rem;
 }
 
-h3 {
+div.announcements {
   align-items: left;
 }
 
-h3 p {
+div.announcements p {
   font-size: 1rem;
   font-style: normal;
 }
@@ -403,21 +409,18 @@ div.end a {
   color: #002f34;
 }
 
-div.column1 {
-  white-space: pre-wrap;
+div.col {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
-
-div.column2 {
-  white-space: pre;
-}
-
-div.column3 a {
+div.col3 a {
   padding: 1rem;
-  justify-self: center;
+  align-items: center;
 }
 
-div.column3 p {
-  justify-content: center;
+div.col3 p {
+  align-items: center;
   font-size: 0.8rem;
   padding: 1.5rem;
   padding-top: 0.5rem;
