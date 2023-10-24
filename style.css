@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  background-color: #f8400d;
+  background-color: #8f9191;
   color: #002f34;
   margin: 0;
 }
@@ -106,6 +106,7 @@ input {
   height: 4.5rem;
   width: 750px;
   border: 0;
+  padding-left: 4rem;
 }
 
 select {
@@ -118,6 +119,11 @@ select {
   height: 4.5rem;
   width: 340px;
   border: 0;
+  -webkit-appearance: none;
+}
+
+select:hover {
+  cursor: pointer;
 }
 
 button.search {
