@@ -1,148 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLX</title>
-</head>
-<body>
-    
-    <h1>
-        <nav>
-            <link rel="shortcut icon" type="image" href="">
-            <a href="">wiadomości</a>
-            <a href="">obserwowane</a>
-            <a href="">twoje konto</a>
-            <a href="">dodaj ogłoszenie</a>
-        </nav>
-    </h1>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="ikony/olx1head.png" />
+    <script
+      src="https://kit.fontawesome.com/8166578419.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="link do strony głównej" class="olx">
+        <img src="ikony/olx2.png" alt="ikona olx" width="90px" height="55px" />
+      </a>
+      <a href="link do wiadomości" class="headline">
+        <i class="fa-regular fa-comment fa-lg"></i>
+        <b>Wiadomości</b>
+      </a>
+      <a href="link do obserwowane" class="headline">
+        <i class="fa-regular fa-heart fa-lg"></i>
+      </a>
+      <a href="link do twoje konto" class="headline">
+        <i class="fa-regular fa-user fa-lg"></i>
+        <b>Twoje konto</b>
+      </a>
+      <button class="add">Dodaj ogłoszenie</button>
+    </nav>
 
-    <h2>
-        <input type="search">
-        <select name="" id="">
-            <option value="">Cała Polska</option>
-            <option value="">Dolnośląskie</option>
-            <option value="">Kujawsko-pomorskie</option>
-            <option value="">Lubelskie</option>
-            <option value="">Lubuskie</option>
-            <option value="">Łudzkie</option>
-            <option value="">Małopolskie</option>
-            <option value="">Mazowieckie</option>
-            <option value="">Opolskie</option>
-            <option value="">Podkarpackie</option>
-            <option value="">Podlaskie</option>
-            <option value="">Pomorskie</option>
-            <option value="">Śląskie</option>
-            <option value="">Świętokrzyskie</option>
-            <option value="">Warmińsko-mazurskie</option>
-            <option value="">Wielkopolskie</option>
-            <option value="">Zachodniopomorskie</option>
-        </select>
+    <div class="search">
+      <input type="search" />
+      <select name="" id="">
+        <option value="">Cała Polska</option>
+        <option value="">Dolnośląskie</option>
+        <option value="">Kujawsko-pomorskie</option>
+        <option value="">Lubelskie</option>
+        <option value="">Lubuskie</option>
+        <option value="">Łudzkie</option>
+        <option value="">Małopolskie</option>
+        <option value="">Mazowieckie</option>
+        <option value="">Opolskie</option>
+        <option value="">Podkarpackie</option>
+        <option value="">Podlaskie</option>
+        <option value="">Pomorskie</option>
+        <option value="">Śląskie</option>
+        <option value="">Świętokrzyskie</option>
+        <option value="">Warmińsko-mazurskie</option>
+        <option value="">Wielkopolskie</option>
+        <option value="">Zachodniopomorskie</option>
+      </select>
 
-        <button>Szukaj</button>
-    </h2>
+      <button class="search">
+        <b>Szukaj</b>
+        <i class="fa-solid fa-magnifying-glass" style="color: #002f34"></i>
+      </button>
+    </div>
 
-    <h3>
-        <p>Kategorie główne</p>
-        <a href="">Antyki i Kolekcje</a>
-        <a href="">Motoryzacja</a>
-        <a href="">Nieruchomości</a>
-        <a href="">Praca</a>
-        <a href="">Dom i Ogród</a>
-        <a href="">Elektronika</a>
-        <a href="">Moda</a>
-        <a href="">Rolnictwo</a>
-        <a href="">Zwierzęta</a>
-        <a href="">Dla Dzieci</a>
-        <a href="">Sport i Hobby</a>
-        <a href="">Muzyka i Edukacja</a>
-        <a href="">Zdrowie i Uroda</a>
-        <a href="">Usługi</a>
-        <a href="">Noclegi</a>
-        <a href="">Wypożyczalnia</a>
-        <a href="">Dla Firm</a>
-        <a href="">Outlet</a>
-        <a href="">Oddam za darmo</a>
-        <a href="">Skarby z PRL</a>
-        <a href="">Smartfony z przesyłką od 1 zł</a>
-        <a href="">Gry z przesyłką od 1 zł</a>
-        <a href="">Miody z przesyłką od 1 zł</a>
-        <a href="">Dostawca, kurier miejski</a>
-        <a href="">Przesyłka z InPost za 1 zł</a>
-    </h3>
+    <div class="category">
+      <h1>Kategorie główne</h1>
+      <a href="">
+        <img
+          src="ikony/antyki-i-kolekcje-4042-2x.png"
+          alt=""
+          class="antiqe"
+          width="88px"
+        />
+        <p>Antyki i Kolekcje</p>
+      </a>
+      <a href="">
+        <img src="ikony/motoryzacja-5-2x.png" alt="" class="car" width="88px" />
+        <p>Motoryzacja</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/nieruchomosci-3-2x.png"
+          alt=""
+          class="house"
+          width="88px"
+        />
+        <p>Nieruchomości</p>
+      </a>
+      <a href="">
+        <img src="ikony/praca-4-2x.png" alt="" class="case" width="88px" />
+        <p>Praca</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/dom-ogrod-628-2x.png"
+          alt=""
+          class="sofa"
+          width="88px"
+        />
+        <p>Dom i Ogród</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/elektronika-99-2x.png"
+          alt=""
+          class="phone"
+          width="88px"
+        />
+        <p>Elektronika</p>
+      </a>
+      <a href="">
+        <img src="ikony/moda-87-2x.png" alt="" class="moda" width="88px" />
+        <p>Moda</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/rolnictwo-757-2x.png"
+          alt=""
+          class="tractor"
+          width="88px"
+        />
+        <p>Rolnictwo</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/zwierzeta-103-2x.png"
+          alt=""
+          class="animal"
+          width="88px"
+        />
+        <p>Zwierzęta</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/dla-dzieci-88-2x.png"
+          alt=""
+          class="child"
+          width="88px"
+        />
+        <p>Dla Dzieci</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/sport-hobby-767-2x.png"
+          alt=""
+          class="sport"
+          width="88px"
+        />
+        <p>Sport i Hobby</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/muzyka-edukacja-751-2x.png"
+          alt=""
+          class="music"
+          width="88px"
+        />
+        <p>Muzyka i Edukacja</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/zdrowie-i-uroda-3647-2x.png"
+          alt=""
+          class="beauty"
+          width="88px"
+        />
+        <p>Zdrowie i Uroda</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/uslugi-4371-2x.png"
+          alt=""
+          class="services"
+          width="88px"
+        />
+        <p>Usługi</p>
+      </a>
+      <a href="">
+        <img src="ikony/noclegi-1816-2x.png" alt="" class="bed" width="88px" />
+        <p>Noclegi</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/wypozyczalnia-3018-2x.png"
+          alt=""
+          class="rent"
+          width="88px"
+        />
+        <p>Wypożyczalnia</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/dla-firm-4269-2x.png"
+          alt=""
+          class="firm"
+          width="88px"
+        />
+        <p>Dla Firm</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/outlet-4517-2x.png"
+          alt=""
+          class="outlet"
+          width="88px"
+        />
+        <p>Outlet</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/oddam-za-darmo-1151-2x.png"
+          alt=""
+          class="free"
+          width="88px"
+        />
+        <p>Oddam za darmo</p>
+      </a>
+      <a href="">
+        <img src="ikony/a-opal0210-1x.png" alt="" class="fire" width="88px" />
+        <p>Opał</p>
+      </a>
+      <a href="">
+        <img src="ikony/a-prl1109-1x.png" alt="" class="prl" width="88px" />
+        <p>Skarby z PRL</p>
+      </a>
+      <a href="">
+        <img src="ikony/b-audio0910-1x.png" alt="" class="audio" width="88px" />
+        <p>Sprzęt audio z przesyłką od 1 zł</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/c-perfumy1110-1x.png"
+          alt=""
+          class="perfum"
+          width="88px"
+        />
+        <p>Perfumy z przesyłką od 1 zł</p>
+      </a>
+      <a href="">
+        <img src="ikony/praca-4-2x.png" alt="" class="work" width="88px" />
+        <p>Praca dodatkowa</p>
+      </a>
+      <a href="">
+        <img
+          src="ikony/o-otomoto0910-1x.png"
+          alt=""
+          class="moto"
+          width="88px"
+        />
+        <p>Moto Targi</p>
+      </a>
+    </div>
 
-    <h4>
-        <p>Ogłoszenia promowane</p>
-        <div>ogłoszenia</div>
-    </h4>
+    <div class="announcements">
+      <h2>Ogłoszenia promowane</h2>
+      <div class="an">
+        <img src="ikony/rower-elektryczny-gorski.jpg" alt="" height="268" />
+        <p>Rower</p>
+        <p class="date">Wrocław - wczoraj 18:30</p>
+        <b>560 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/auto.jpg" alt="" />
+        <p>Auto</p>
+        <p class="date">Warszawa - 13.11</p>
+        <b>47 500 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/laptop.jpg" alt="" />
+        <p>Laptop</p>
+        <p class="date">Gdańsk - 24.07</p>
+        <b>2 999 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/książka.jpg" alt="" />
+        <p>Książka</p>
+        <p class="date">Szczecin - 17.10</p>
+        <b>45 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/kot.jpg" alt="" />
+        <p>Kot</p>
+        <p class="date">Pruszków - 14.10</p>
+        <b>Za darmo</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/buty.jpg" alt="" />
+        <p>Buty</p>
+        <p class="date">Mikołajki - 02.05</p>
+        <b>350 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/biżuteria.jpg" alt="" />
+        <p>Biżuteria</p>
+        <p class="date">Kalisz - wczoraj 12:00</p>
+        <b>260 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+      <div class="an">
+        <img src="ikony/opal.jpg" alt="" />
+        <p>Opał</p>
+        <p class="date">Sopot - 2 dni temu</p>
+        <b>12345 zł</b>
+        <i class="fa-regular fa-heart fa-lg" style="color: #c6c8d1"></i>
+      </div>
+    </div>
 
     <footer>
-        <div>
-            <link rel="shortcut icon" type="image" href="">
-            <p>Wyróżnij się jako firma!</p>
-            <p>Poznaj ofertę OLX dla biznesu</p>
-            <button>Zobacz szczegóły</button>
+      <div class="business">
+        <img src="ikony/chart.png" alt="" class="chart" height="100px" />
+        <div class="check">
+          <p class="mark">Wyróżnij się jako firma!</p>
+          <p class="know">Poznaj ofertę OLX dla biznesu</p>
         </div>
+        <button class="more">Zobacz szczegóły</button>
+      </div>
 
-        <div>
-            <link rel="shortcut icon" type="image" href="">
-            <p>OLX.pl to darmowe ogłoszenia lokalne w kategoriach: 
-                Moda, Zwierzęta, Dla Dzieci, Sport i Hobby, Muzyka i Edukacja. 
-                Szybko znajdziesz tu ciekawe ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą. 
-                Na OLX.pl czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody. Jeśli chcesz 
-                coś sprzedać - w prosty sposób dodasz bezpłatne ogłoszenia. Chcesz coś kupić - tutaj
-                 znajdziesz ciekawe okazje, taniej niż w sklepie. Sprzedawaj po sąsiedzku na OLX.pl
-                
-                Dołącz do nas:</p>
-            <link rel="shortcut icon" type="image" href="">
-            <link rel="shortcut icon" type="image" href="">
-            <link rel="shortcut icon" type="image" href="">
-            <link rel="shortcut icon" type="image" href="">
-            <link rel="shortcut icon" type="image" href="">
+      <div class="adv">
+        <img src="ikony/olx3.png" alt="" class="iconolx" width="150px" />
+        <p>
+          OLX.pl to darmowe ogłoszenia lokalne w kategoriach: Moda, Zwierzęta,
+          Dla Dzieci, Sport i Hobby, Muzyka i Edukacja. Szybko znajdziesz tu
+          ciekawe ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą. Na
+          OLX.pl czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody.
+          Jeśli chcesz coś sprzedać - w prosty sposób dodasz bezpłatne
+          ogłoszenia. Chcesz coś kupić - tutaj znajdziesz ciekawe okazje, taniej
+          niż w sklepie. Sprzedawaj po sąsiedzku na OLX.pl
+        </p>
+        <br />
+        <p>Dołącz do nas:</p>
+
+        <i
+          class="fa-brands fa-square-facebook fa-2xl"
+          style="color: #406367"
+        ></i>
+        <i
+          class="fa-brands fa-square-instagram fa-2xl"
+          style="color: #406367"
+        ></i>
+        <i
+          class="fa-brands fa-square-youtube fa-2xl"
+          style="color: #406367"
+        ></i>
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: #406367"></i>
+        <i class="fa-brands fa-pinterest fa-2xl" style="color: #406367"></i>
+      </div>
+
+      <div class="mainCategory">
+        <img src="ikony/note.png" alt="" height="100px" />
+        <p>
+          <b>Kategorie główne:</b>
+          <a href="">Antyki i Kolekcje, </a>
+          <a href="">Motoryzacja, </a>
+          <a href="">Nieruchomości, </a>
+          <a href="">Praca, </a>
+          <a href="">Dom i Ogród, </a>
+          <a href="">Elektronika, </a>
+          <a href="">Moda, </a>
+          <a href="">Rolnictwo, </a>
+          <a href="">Zwierzęta, </a>
+          <a href="">Dla Dzieci, </a>
+          <a href="">Sport i Hobby, </a>
+          <a href="">Muzyka i Edukacja, </a>
+          <a href="">Zdrowie i Uroda, </a>
+          <a href="">Usługi, </a>
+          <a href="">Noclegi, </a>
+          <a href="">Wypożyczalnia, </a>
+          <a href="">Dla Firm, </a>
+          <a href="">Outlet, </a>
+          <a href="">Oddam z darmo</a>
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="end">
+        <div class="col">
+          <a href="">Aplikacje mobilne OLX.pl</a>
+          <a href="">Pomoc</a>
+          <a href="">Wyróżnione ogłoszenia</a>
+          <a href="">Oferta dla firm</a>
+          <a href="">Blog</a>
+          <a href="">Regulamin</a>
+          <a href="">Polityka prywatności</a>
+          <a href="">Reklama</a>
+          <a href="">Biuro prasowe</a>
+          <a href="">Informacja o realizowanej strategii podatkowej</a>
         </div>
-
-        <div>
-            <link rel="shortcut icon" type="image" href="">
-            <p><b>Kategorie główne:</b><a href="">Antyki i Kolekcje, </a>
-            <a href="">Motoryzacja, </a><a href="">Nieruchomości, </a><a href="">Praca, </a>
-            <a href="">Dom i Ogród, </a><a href="">Elektronika, </a><a href="">Moda, </a><a href="">Rolnictwo, </a>
-            <a href="">Zwierzęta, </a><a href="">Dla Dzieci, </a><a href="">Sport i Hobby, </a>
-            <a href="">Muzyka i Edukacja, </a><a href="">Zdrowie i Uroda, </a><a href="">Usługi, </a>
-            <a href="">Noclegi, </a><a href="">Wypożyczalnia, </a><a href="">Dla Firm, </a>
-            <a href="">Outlet, </a><a href="">Oddam z darmo</a></p>
+        <div class="col">
+          <a href="">Jak działa OLX.pl</a>
+          <a href="">Zasady bezpieczeństwa</a>
+          <a href="">Mapa kategorii</a>
+          <a href="">Mapa miejscowości</a>
+          <a href="">Popularne wyszukiwania</a>
+          <a href="">Kariera</a>
+          <a href="">Ustawienia plików cookie</a>
+          <a href="">Zawodowo OLX - serwis o pracy</a>
+          <a href="">Cennik</a>
+          <a href="">Jak działają przesyłki OLX</a>
+          <a href="">Weryfikacja danych</a>
+          <a href="">Polityka cookies</a>
         </div>
-
-        <br>
-
-        <div>
-            <a href=""><b>Aplikacje mobilne OLX.pl</b></a>
-            <a href=""><b>Pomoc</b></a>
-            <a href=""><b>Wyróżnione ogłoszenia</b></a>
-            <a href=""><b>Oferta dla firm</b></a>
-            <a href=""><b>Blog</b></a>
-            <a href=""><b>Regulamin</b></a>
-            <a href=""><b>Polityka prywatności</b></a>
-            <a href=""><b>Reklama</b></a>
-            <a href=""><b>Biuro prasowe</b></a>
-            <a href=""><b>Informacja o realizowanej strategii podatkowej</b></a>
-            <a href=""><b>Jak działa OLX.pl</b></a>
-            <a href=""><b>Zasady bezpieczeństwa</b></a>
-            <a href=""><b>Mapa kategorii</b></a>
-            <a href=""><b>Mapa miejscowości</b></a>
-            <a href=""><b>Popularne wyszukiwania</b></a>
-            <a href=""><b>Kariera</b></a>
-            <a href=""><b>Ustawienia plików cookie</b></a>
-            <a href=""><b>Zawodowo OLX - serwis o pracy</b></a>
-            <a href=""><b>Cennik</b></a>
-            <a href=""><b>Jak działają przesyłki OLX</b></a>
-            <a href=""><b>Weryfikacja danych</b></a>
-            <a href=""><b>Polityka cookies</b></a>
-
-            <link rel="shortcut icon" type="image" href="">
-            <link rel="shortcut icon" type="image" href="">
-
+        <div class="col3">
+          <a href=""
+            ><img src="ikony/googleplay.png" alt="googleplay" height="70px"
+          /></a>
+          <a href=""
+            ><img src="ikony/appstore.png" alt="appstore" height="70px"
+          /></a>
+          <p>Darmowa aplikacja na twój telefon</p>
         </div>
-
+      </div>
     </footer>
-</body>
+  </body>
 </html>
